@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>2 col Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\MatthewS\Documents\Full Stack developer\StreamOne\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+
+	<style type="text/css">
+		.navbar {
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+<h1>Hello this is BootStrap</h1>
+
+<div class="navbar"> <!-- from this div to..-->
+	<nav class="navbar navbar-inverse"><!-- changes menu bar to black-->
+	<div class="navbar-hearder">
+		<a class="navbar-brand" href="">NavBar</a><!-- link to logo-->
+	</div>
+
+	<ul class="nav navbar-nav navbar-right"><!-- put the links to the right of bar-->
+		<li><a href="">Forms</a></li>
+		<li><a href="">Media</a></li>
+		<li><a href="">HTML5</a></li>
+	</ul>
+</nav>
+</div> 				<!-- to this on is the menu bar.-->
+
+<div class="container">
+<div class="row">
+<div class="col-sm-4"><h2>HTML</h2>
+	<p>HTML is a major web technology that defines the structure of a webpage. if you're looking to build websites you know about HTML</p>
+</div>
+
+<div class="col-sm-4"><h2>CSS</h2>
+	<p>Cascading style sheets, most of the time abbreviated as CSS, is a stylesheet language used to describe the presentation of a document written in HTML.</p>
+</div>
+
+<div class="col-sm-4"><h2>Bootstrap</h2>
+	<p> Bootstrap makes front-end wed development faster and easier. it's made for folks of all skill levels, devices of all shapes, and projects of all sizes</p>
+</div>
+
+<hr><!-- makes a line break to separate the rows-->
+
+<div class="col-sm-3"><h2>JavaScript</h2>
+	<p>The most common use of JavaScript is to add client-side behavior to HTML pages, also known as Dynamic HTML (DHTML). Scripts are embedded in or included from HTML pages and interact with the Document Object Model (DOM) of the page.</p>
+
+</div>
+
+<div class="col-sm-3"><h2>Python</h2>
+	<p>Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. An interpreted language, Python has a design philosophy that emphasizes code readability</p>
+
+</div>
+
+<div class="col-sm-3"><h2>Djano</h2>
+	<p>Django (/ˈdʒæŋɡoʊ/ JANG-goh)[5] is a free and open-source web framework, written in Python, which follows the model-view-template (MVT) architectural pattern.[6][7] It is maintained by the Django Software Foundation (DSF), an independent organization established as a 501(c)(3) non-profit.</p>
+
+</div>
+
+<div class="col-sm-3"><h2>GitHub</h2>
+	<p>GitHub is a web-based Git or version control repository and Internet hosting service. It is mostly used for code. It offers all of the distributed version control and source code management functionality of Git as well as adding its own features</p>
+
+</div>
+
+<hr> <!-- separate the rows-->
+
+
+<div class="col-sm-6"><h2>SQL</h2>
+	<p>SQL (pronounced "ess-que-el") stands for Structured Query Language. SQL is used to communicate with a database. According to ANSI (American National Standards Institute), it is the standard language for relational database management systems.</p>
+
+</div>
+
+<div class="col-sm-6"><h2>FTP</h2>
+	<p>The File Transfer Protocol (FTP) is the standard network protocol used for the transfer of computer files between a client and server on a computer network.
+FTP is built on a client-server model architecture and uses separate control and data connections between the client and the server.[1] FTP users may authenticate themselves with a clear-text sign-in protocol, normally in the form of a username and password, but can connect anonymously if the server is configured to allow it.</p>
+
+</div>
+
+<hr>
+
+<div class="col-sm-12"><h2>Full-Stack Development</h2>
+	<p>Others are of the opinion that a full-stack developer is simply someone who is familiar with all layers in computer software development. These developers aren't experts at everything; they simply have a functional knowledge and ability to take a concept and turn it into a finished product.</p>
+
+</div>
+</div>
+
+<hr>
+
+<div class="list-group">
+	 <a href="#" class="list-group-item">
+			<!--add glyph-->
+		<span class="glyphicon glyphicon-star-empty"></span> Stars<!--add badge--><span class="badge">145</span>
+	</a>
+
+	<a href="#" class="list-group-item active">
+			<!--add glyph-->
+		<span class="glyphicon glyphicon-music"></span> Songs<!--add badge--><span class="badge">145</span>
+	</a>
+
+	<a href="#" class="list-group-item">
+			<!--add glyph-->
+		<span class="glyphicon glyphicon-camera"></span> Photos<!--add badge--><span class="badge">145</span>
+	</a>
+			
+	<a href="#" class="list-group-item ">
+			<!--add glyph-->
+		<span class="glyphicon glyphicon-comment"></span> Comments<!--add badge--><span class="badge">145</span>
+	</a>
+	</div>
+
+</div>
+
+</body>
+<script src="http://code.jquery.com/jquery.min.js"></script> <!-- both have to be used for bootstrap now onwards-->
+<script src="bootstrap/js/bootstrap.min.js"></script> <!-- both have to be used for bootstrap now onwards-->
+</html>

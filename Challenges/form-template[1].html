@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   
+      <title>Form</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   
+      <!--
+         Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+
+      body{
+         font-family: 'Roboto', sans-serif;
+      }
+         #container{
+            width: 550px;
+            margin: auto;
+
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+            
+         label.field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+         }
+         .field{
+            padding: 6px 8px;
+         }
+
+         #currency{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:rgba(129, 187, 201,.2);
+
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <form>
+            <fieldset><!-- put everything below in a box-->
+               <legend> User Details</legend> <!-- this is the username at top-->
+
+            <label for="fname">First Name</label><!--puts name as shown here on page as text beside box-->
+            <input required="" id="fname" type="text" name="fname" placeholder="First name here">
+
+            <label for="age">Age</label>
+            <input id="age" type="range" min="16" max="70" name="age" >
+
+            <label for="postcode">Post Code</label>
+            <input id="postcode" type="text" name="postcode" required="" pattern="[A-Z]{2}[0-9]{2} [A-Z]{2}" placeholder="eg, AA1 2ZZ"><!--4 uppercase, 2 numbers needed to carry on-->
+
+            <label for="email">Email</label>
+            <input required="" autofocus="" id="email" type="email" name="email" placeholder="Email address here">
+
+            <label for="Website">WebSite</label>
+            <input id="website" type="url" name="website" placeholder="enter your website here">
+
+            <label for="password">Password</label>
+            <input id="password" type="password" name="passwrd" placeholder="Password please">
+
+            <label for="mobnumber">Mobile Number</label>
+            <input id="mobnumber" type="tel" name="mobnumber" placeholder="Enter your mobile number here" pattern="[0-9]{11}">
+
+            <label for="pnumber">Passport Number</label>
+            <input id="pnumber" required="" type="text" name="pnumber" placeholder="Passport Number here" pattern="[0-9]{7}[A-Za-z]{1}">
+
+            <label for="ccnumber">Credit Card Number</label>
+            <input id="ccnumber" type="text" name="ccnumber" required="" pattern="[0-9]{15}">
+
+            <label><input type="checkbox" name="meals" value="Starter">Starter</label>
+            <label><input type="checkbox" name="meals" value="Main">Main Meal</label>
+            <label><input type="checkbox" name="meals" value="dessert">Dessert</label>
+            <label><input type="checkbox" name="meals" value="drink">Tea or Coffee</label>
+
+            <label><input type="radio" name="Gender" value="Male">Male</label>
+            <label><input type="radio" name="Gender" value="Female">Female</label>
+            <label><input type="radio" name="Gender" value="unknown">Unknown</label>
+
+            <label for="currency">Currency</label>
+            <select id="currency">
+               <optgroup label="Signs of Zodiac">
+                  <option value="Sun">Sun</option>
+                  <option value="earth">Earth</option>
+               </optgroup>
+               <option label="More">
+                  <option value="fire">Fire</option>
+                  <option value="Water">Water</option>
+               </option>
+            </select>
+
+            <input list="musicGenres" name="Music Genres">
+            <datalist id="musicGenres">
+               <option value="rock">Rock</option>
+               <option value="trance">Trance</option>
+               <option value="dance">Dance</option>
+               <option value="pop">Pop</option>
+               <option value="r&b">R&B</option>
+            </datalist>
+
+            
+            </fieldset>
+            <input type="submit" name="submit"> <!--Submit button created-->
+         </form>
+        
+    </div>
+   </body>
+
+</html>

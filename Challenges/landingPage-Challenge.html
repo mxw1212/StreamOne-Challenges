@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+
+		body{
+			background-color: #f5d76e;
+		}
+
+		nav{
+			font-family: roboto;
+			margin: 30px auto;
+			width: 100%;
+			height: 500px;
+			display: flex; /*sets up the flex conatiner*/
+			flex-direction: column; /*stacks on top of each other for mobile display*/
+			align-items:stretch;
+			border-radius: 10px; /*remove bullets*/
+			padding: 0;	
+		}
+				
+		a{
+			text-decoration: none; /*removes bullets*/
+			color: white;
+			flex:1; /*asigns same width*/
+			height: 30px;
+			font-family: Dosis;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 2em;
+			border-bottom:1px solid white;
+
+		}
+		#logoNav{
+			font-size: 2em;
+			font-weight: bold;
+			justify-content: center;
+			}
+
+		#landing{
+			display: flex; /*set as a flex container*/
+			flex-direction:column; /*mobile first approach*/
+			justify-content:center;/* for the crox axis alignment*/
+			align-items:center; /* for the main axis alignment*/
+		}
+		#landing-message{
+			text-align: center;
+			font-family: Dosis;
+			font-size: 50px;
+			margin:50px 20px;
+		}
+		#landing-graphic{
+		}
+
+		@media screen and (min-width: 700px){ /* sets for screens more than 700px*/
+			nav{
+				flex-flow: row; /* sets direction of nav*/
+				align-items: baseline; /* items are alifned such as their baselines align*/
+
+			}
+			a{
+				font-size: 1.3em; /* changes front to smaller*/
+				border:none; /* removes border*/
+
+			}
+			#logoNav{
+				flex:6; /* sets size of logo*/
+				text-align: left;
+			}
+			/* Landing */
+			#landing{
+				flex-direction:row;/* across screen for dexktop screen size*/
+				width:80%;
+				margin: 100px auto;
+			}
+
+		}
+
+		</style>
+</head>
+<body>
+
+	<nav>
+		
+			<a id="logoNav">CODE INSTITUTE</a>
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Photos</a>
+		
+
+	</nav>
+		<div id="landing">
+				<div id="landing-message">
+					<h1>Make Creative Clever Fun Apps. Simple.</h1>
+				</div>
+			<div id="landing-graphic">
+				<img id="landing-image" src="C:\Users\MatthewS\Documents\Full Stack developer\StreamOne\photos\laptop.png" alt="laptop" width="400">
+			</div>
+		</div>
+
+</body>
+</html>

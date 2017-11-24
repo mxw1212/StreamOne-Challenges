@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+
+		body{
+			background-color: #f5d76e;
+		}
+
+		nav{
+			font-family: roboto;
+			margin: 30px auto;
+			width: 100%;
+			display: flex; /*sets up the flex conatiner*/
+			flex-direction: column; /*stacks on top of each other for mobile display*/
+			align-items:stretch;
+			border-radius: 10px; 
+			list-style-type:none; /*remove bullets*/
+			padding: 0;	
+		}
+				
+		a{
+			text-decoration: none; /*removes bullets*/
+			color: white;
+			flex:1; /*asigns same width*/
+			height: 30px;
+			font-family: Dosis;
+			padding:20px;
+			text-align: center;
+			font-size: 40px;
+			border-bottom:1px solid white;
+
+		}
+		#logoNav{
+			font-size: 40px;
+			font-weight: bold;
+			justify-content: center;
+			}
+
+		#landing{
+			display: flex; /*set as a flex container*/
+			flex-direction:column; /*mobile first approach*/
+			justify-content:center;/* for the crox axis alignment*/
+			align-items:center; /* for the main axis alignment*/
+		}
+		#landing-message{
+			text-align: center;
+			font-family: Dosis;
+			font-size: 50px;
+			margin:50px 20px;
+		}
+		#landing-graphic{
+			}
+
+		/*------------------Cards with text---------------------*/
+
+		.cards{
+			display: flex; /*set as a flex container*/
+			flex-direction:column; /*mobile first approach window ( vertical)*/
+			justify-content:space-around;/* for the crox axis alignment*/
+			align-items:center; /* for the main axis alignment*/
+		}
+
+
+		.card{
+			background-color: white;
+			border:none;
+			margin: 10px;
+			text-align: center;
+			padding:20px 20px 20px 20px; /* makes the white background all around the pic and text*/
+
+
+		}
+
+		.card h2{
+				font-family: Pangolin, cursive;
+				font-size: 28px
+		}
+
+		.card img{
+				width: 100%;
+
+			}
+		.card p{
+				font-family: Pangolin, cursive; /*download from google in link above*/
+				font-size: 22px
+			}
+
+		@media screen and (min-width: 700px){ /* sets for screens more than 700px*/
+			nav{
+				flex-flow: row; /* sets direction of nav*/
+				align-items: baseline; /* items are alifned such as their baselines align*/
+
+			}
+			a{
+				font-size: 1.3em; /* changes front to smaller*/
+				border:none; /* removes border*/
+
+			}
+			#logoNav{
+				flex:6; /* sets size of logo*/
+				text-align: left;
+			}
+			/* Landing under mobile app */
+			#landing{
+				flex-direction:row;/* across screen for desktop screen size*/
+				width:80%;
+				margin: 100px auto;
+			}
+
+			.cards{
+				flex-flow: row; /* sets direction of boxes to sit horizonatl on pc screen*/
+				align-items: baseline; /* items are alifned such as their baselines align*/
+				justify-content: center;
+			}
+
+		}
+
+		</style>
+</head>
+<body>
+	<nav>
+			<a id="logoNav">CODE INSTITUTE</a>
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Photos</a>
+	</nav> 
+		<div id="landing">
+				<div id="landing-message">
+					<h1>Make Creative Clever Fun Apps. Simple.</h1>
+				</div>
+			<div id="landing-graphic">
+				<img id="landing-image" src="C:\Users\MatthewS\Documents\Full Stack developer\StreamOne\img\laptop.png" alt="laptop" width="400">
+			</div>
+		</div>
+	<section class="cards">
+		<div class="card">
+			<img src="C:\Users\MatthewS\Documents\Full Stack developer\StreamOne\img\graphic1.png" alt="design pic">
+			<h2>Web Info Sessions</h2>
+			<p>If you have questions about your career in... Then just talk to one of our team members today!</p>
+		</div>
+		<div class="card">
+			<img src="C:\Users\MatthewS\Documents\Full Stack developer\StreamOne\img\graphic2.png" alt="design pic">
+			<h2>Web Info Sessions</h2>
+			<p>If you have questions about your career in... Then just talk to one of our team members today!</p>
+		</div>
+			<div class="card">
+			<img src="C:\Users\MatthewS\Documents\Full Stack developer\StreamOne\img\graphic3.png" alt="design pic">
+			<h2>Web Info Sessions</h2>
+			<p>If you have questions about your career in... Then just talk to one of our team members today!</p>
+		</div>
+
+	</section>
+
+</body>
+</html>
